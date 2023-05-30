@@ -1,18 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./SignUpPage.css";
 import { BsTwitter } from 'react-icons/bs';
+import TextField from '@mui/material/TextField';
 
 
 function SignUpPage() {
-  return (
-    <div className="signup_style">
+     return (
+     <div className="signup_style">
         <div className="logo-box">
         
         <BsTwitter className="twitter_icon"/>
+        <br/>
         
-        <h2>Join Twitter today</h2>
+        <h2>Create your own account </h2>
 
         <form action="" className="box-form">
+            <TextField id="outlined-basic" 
+            sx={{padding:"10px 50px 10px 50px",fontSize:"50px"
+            width: { sm: 200, md: 300 }
+            
+            
+            }} label="Name" variant="outlined" />
             <input type="text" placeholder="Username" />
             <br/><br/><br/>
             <input type="tel" placeholder="Phone" />
